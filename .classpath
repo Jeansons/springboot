@@ -33,5 +33,7 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="D:/eclipse/apache-tomcat-9.0.13/lib/jasper-el.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse/apache-tomcat-9.0.13/lib/jaspic-api.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
