@@ -6,7 +6,7 @@
 	<jmxconfigurator/>
 	<appender name="console" class="ch.qos.logback.core.ConsoleAppender">
 		<encoder>
-			<pattern>logbak: %d{HH:mm:ss.SSS} %LOGGER{36} - %msg%n</pattern>
+			<pattern>logbak: %d{HH:mm:ss.SSS} %logger{36} - %msg%n</pattern>
 		</encoder>
 	</appender>
 		<logger name="org.springframework.web" level="DEBUG"/>
