@@ -1,9 +1,11 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.zdwy.www</groupId>
-  <artifactId>springboot</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>war</packaging>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.zdwy.www</groupId>
+	<artifactId>springboot</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<properties>
 		<java.version>1.8</java.version>
 		<!-- web -->
@@ -38,7 +40,7 @@
 			<artifactId>commons-io</artifactId>
 			<version>2.3</version>
 		</dependency>
-		<!--增加jsr250-->
+		<!--增加jsr250 -->
 		<dependency>
 			<groupId>javax.annotation</groupId>
 			<artifactId>jsr250-api</artifactId>
@@ -52,7 +54,7 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.12</version>	    
+			<version>4.12</version>
 		</dependency>
 		<!-- Spring MVC -->
 		<dependency>
@@ -116,20 +118,20 @@
 			<version>${logback.version}</version>
 		</dependency>
 		<!-- 对json和xml格式的支持 -->
-		 <dependency>
+		<dependency>
 			<groupId>com.fasterxml.jackson.dataformat</groupId>
 			<artifactId>jackson-dataformat-xml</artifactId>
 			<version>2.9.6</version>
 		</dependency>
 		<dependency>
-    		<groupId>com.fasterxml.jackson.core</groupId>
-    		<artifactId>jackson-databind</artifactId>
-    		<version>2.9.6</version>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.9.6</version>
 		</dependency>
 		<dependency>
-    		<groupId>commons-collections</groupId>
-    		<artifactId>commons-collections</artifactId>
-   		 	<version>3.2.1</version>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+			<version>3.2.1</version>
 		</dependency>
 		<!-- file upload -->
 		<dependency>
@@ -139,9 +141,9 @@
 		</dependency>
 		<!-- 非必须，可简化I/O操作 -->
 		<dependency>
-		 	<groupId>commons-io</groupId>
-		 	<artifactId>commons-io</artifactId>
-		 	<version>2.6</version>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.6</version>
 		</dependency>
 	</dependencies>
 	<build>
@@ -155,12 +157,12 @@
 					<target>${java.version}</target>
 				</configuration>
 			</plugin>
-				<plugin>
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-var-plugin</artifactId>
 				<version>2.3.2</version>
 				<configuration>
-					 <failOnMissingWebXml>false</failOnMissingWebXml>  
+					<failOnMissingWebXml>false</failOnMissingWebXml>
 				</configuration>
 			</plugin>
 		</plugins>

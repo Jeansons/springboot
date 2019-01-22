@@ -10,7 +10,7 @@ import springmvc4.domain.DemoObj;
 @Controller
 public class ConverterController {
 	@RequestMapping(value="/convert",produces= {"application/x-wisely"})
-	public @ResponseBody DemoObj converter(@RequestBody DemoObj demoObj) {
+	public @ResponseBody DemoObj convert(@RequestBody DemoObj demoObj) {
 		return demoObj;
 	}
 

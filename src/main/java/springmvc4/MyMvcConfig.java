@@ -59,6 +59,7 @@ public class MyMvcConfig implements WebMvcConfigurer{//官方推荐 实现WebMvc
 		registry.addViewController("/index").setViewName("/index");
 		registry.addViewController("/toUpload").setViewName("/upload");
 		registry.addViewController("/converter").setViewName("/converter");
+		registry.addViewController("/sse").setViewName("/sse");
 	}
 	@Override
 	public void configurePathMatch(PathMatchConfigurer configurer) { //可不忽略“.”
