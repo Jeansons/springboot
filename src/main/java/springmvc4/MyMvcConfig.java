@@ -6,10 +6,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.PathMatchConfigurer;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistration;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
@@ -49,6 +49,10 @@ public class MyMvcConfig implements WebMvcConfigurer{//官方推荐 实现WebMvc
 	public void addViewControllers(ViewControllerRegistry registry) {
 		registry.addViewController("/index").setViewName("/index");
 
-}
+	}
+	@Override
+	public void configurePathMatch(PathMatchConfigurer configurer) { //可不忽略“.”
+		configurer.setUseSuffixPatternMatch(false);
+	}
 	
 }
